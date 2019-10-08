@@ -1,4 +1,4 @@
-describe "bachelor" do 
+describe "bachelor" do
 
   let(:data) { JSON.parse(File.read('spec/fixtures/contestants.json')) }
 
@@ -45,8 +45,8 @@ describe "bachelor" do
   end
 
   describe "#get_occupation" do
-    it "returns 'Journalist' when passed data and the string 'Cranston, Rhode Island'" do
-      expect(get_occupation(data, "Cranston, Rhode Island")).to eq("Journalist")
+    it "returns 'Jumbotron Operator' when passed data and the string 'Cranston, Rhode Island'" do
+      expect(get_occupation(data, "Cranston, Rhode Island")).to eq("Jumbotron Operator")
     end
 
     it "returns 'Critical care nurse' when passed data and the string 'Waverly, Nebraska'" do
